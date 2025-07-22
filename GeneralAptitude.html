@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alten Screening Quiz</title>
+    <link rel="icon" type="image/png" href="ALTEN_logo.svg.png" />
+     <link rel="stylesheet" href="HeadFoot.css" />
+    <style>
+       #quizForm{
+        font-family: Arial, sans-serif;
+        background: #f7fbff;
+        padding: 20px;
+        max-width: 700px;
+        margin: auto;
+        border-radius: 20px;
+      }
+
+      h2 {
+        color: #043962;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .quiz-section {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .quiz-section h3 {
+        color: #01579b;
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin: 8px 0;
+        cursor: pointer;
+      }
+
+      input[type="radio"] {
+        margin-right: 8px;
+      }
+
+      input[type="number"] {
+        width: 60px;
+        padding: 6px;
+        font-size: 1rem;
+        margin-top: 6px;
+      }
+
+      .btn {
+        background-image: url("d841ed5e5ec08470ec5f9495eaaa1eae.webp");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        margin: 10px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional: improves text visibility */
+      }
+
+      .btn:hover:enabled {
+        opacity: 0.85;
+        filter: brightness(1.1);
+      }
+
+      .btn:disabled {
+        opacity: 0.5;
+        filter: grayscale(100%);
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+
+      .button-group {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      #result {
+        background-color: #e1f5fe;
+        border-left: 6px solid #0288d1;
+        padding: 20px;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        line-height: 1.5;
+        display: none;
+        margin-top: 20px;
+        color: #01579b;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+  <!-- Left Section: Logo + Nav -->
+  <div class="header-left-section">
+    <img src="ALTEN_logo.svg.png" alt="ALTEN Logo" class="logo-img" id="site-logo" />
+
+    <nav class="nav-bar" id="main-nav">
+      <ul class="nav-list">
+  <li class="nav-item">
+    <a href="https://www.alten.com/alten-group/" class="nav-link">GROUP <span class="dropdown-arrow">&#9662;</span></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.alten.com/services/" class="nav-link">SERVICES <span class="dropdown-arrow">&#9662;</span></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.alten.com/#our-sectors" class="nav-link">INDUSTRIES <span class="dropdown-arrow">&#9662;</span></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.alten.com/careers/" class="nav-link">CAREERS <span class="dropdown-arrow">&#9662;</span></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.alten.com/investors/" class="nav-link">INVESTORS <span class="dropdown-arrow">&#9662;</span></a>
+  </li>
+  <li class="nav-item">
+    <a href="https://www.alten.com/newsroom/" class="nav-link">NEWSROOM <span class="dropdown-arrow">&#9662;</span></a>
+  </li>
+</ul>
+
+  </div>
+
+  <!-- Right Section: Socials + Contact Button -->
+  <div class="header-right-section" id="right-section">
+    <div class="social-media-icons" id="social-icons">
+      <a href="https://x.com/Alten_group"><img src="twitter.png" alt="X" class="social-icon" /></a>
+      <a href="https://www.linkedin.com/company/alten/"><img src="linkedin.png" alt="LinkedIn" class="social-icon" /></a>
+      <a href="https://www.youtube.com/user/altenfrance"><img src="youtube.png" alt="YouTube" class="social-icon" /></a>
+      <a href="https://www.instagram.com/alten_group/"><img src="instagram.png" alt="Instagram" class="social-icon" /></a>
+    </div>
+    <a style="text-decoration: none"https://www.alten.com/contact/" class="contact-btn" id="contact-button">CONTACT US</a>
+  </div>
+  
+  <!-- Hamburger Icon -->
+  <div class="hamburger-menu" id="hamburger">&#9776;</div>
+</header>
+    <h2>General Aptitude Quiz</h2>
+
+    <!-- Your form and JavaScript remain unchanged -->
+
+    <form id="quizForm">
+      <div class="quiz-section">
+        <h3>Section 1: English</h3>
+
+        <p>Q1. Choose the correct synonym of <strong>"Abundant"</strong>:</p>
+        <label><input type="radio" name="q1" value="wrong" /> A. Rare</label>
+        <label><input type="radio" name="q1" value="wrong" /> B. Empty</label>
+        <label><input type="radio" name="q1" value="wrong" /> C. Scarce</label>
+        <label
+          ><input type="radio" name="q1" value="correct" /> D. Plenty</label
+        >
+
+        <p>
+          Q2. Select the word that best completes the sentence:<br />
+          "She has a very _______ knowledge of history."
+        </p>
+        <label
+          ><input type="radio" name="q2" value="wrong" /> A. superficial</label
+        >
+        <label
+          ><input type="radio" name="q2" value="correct" /> B. profound</label
+        >
+        <label
+          ><input type="radio" name="q2" value="wrong" /> C. irrelevant</label
+        >
+        <label><input type="radio" name="q2" value="wrong" /> D. limited</label>
+
+        <p>
+          Q3. Identify the correct plural form of <strong>"Analysis"</strong>:
+        </p>
+        <label
+          ><input type="radio" name="q3" value="wrong" /> A. Analysises</label
+        >
+        <label
+          ><input type="radio" name="q3" value="correct" /> B. Analyses</label
+        >
+        <label
+          ><input type="radio" name="q3" value="wrong" /> C. Analysis'</label
+        >
+        <label
+          ><input type="radio" name="q3" value="wrong" /> D. Analyzes</label
+        >
+
+        <p>Q4. Choose the correctly spelled word:</p>
+        <label><input type="radio" name="q4" value="wrong" /> A. Recieve</label>
+        <label
+          ><input type="radio" name="q4" value="correct" /> B. Receive</label
+        >
+        <label><input type="radio" name="q4" value="wrong" /> C. Recive</label>
+        <label><input type="radio" name="q4" value="wrong" /> D. Receve</label>
+      </div>
+
+      <div class="quiz-section">
+        <h3>Section 2: Mathematics</h3>
+
+        <p>Q5. What is 15% of 200?</p>
+        <label><input type="radio" name="q5" value="wrong" /> A. 20</label>
+        <label><input type="radio" name="q5" value="wrong" /> B. 25</label>
+        <label><input type="radio" name="q5" value="correct" /> C. 30</label>
+        <label><input type="radio" name="q5" value="wrong" /> D. 35</label>
+
+        <p>Q6. Simplify: (5 × 4) + (12 ÷ 3)</p>
+        <label><input type="radio" name="q6" value="correct" /> A. 24</label>
+        <label><input type="radio" name="q6" value="wrong" /> B. 20</label>
+        <label><input type="radio" name="q6" value="wrong" /> C. 25</label>
+        <label><input type="radio" name="q6" value="wrong" /> D. 18</label>
+
+        <p>Q7. Solve for x: 2x + 3 = 11</p>
+        <label><input type="radio" name="q7" value="correct" /> A. 4</label>
+        <label><input type="radio" name="q7" value="wrong" /> B. 3</label>
+        <label><input type="radio" name="q7" value="wrong" /> C. 5</label>
+        <label><input type="radio" name="q7" value="wrong" /> D. 6</label>
+
+        <p>Q8. What is the next prime number after 29?</p>
+        <label><input type="radio" name="q8" value="wrong" /> A. 30</label>
+        <label><input type="radio" name="q8" value="correct" /> B. 31</label>
+        <label><input type="radio" name="q8" value="wrong" /> C. 33</label>
+        <label><input type="radio" name="q8" value="wrong" /> D. 35</label>
+      </div>
+
+      <div class="quiz-section">
+        <h3>Section 3: Logical Reasoning</h3>
+
+        <p>Q9. What comes next in the sequence: 2, 4, 8, 16, ___?</p>
+        <label><input type="radio" name="q9" value="wrong" /> A. 24</label>
+        <label><input type="radio" name="q9" value="wrong" /> B. 28</label>
+        <label><input type="radio" name="q9" value="wrong" /> C. 30</label>
+        <label><input type="radio" name="q9" value="correct" /> D. 32</label>
+
+        <p>
+          Q10. If all Bloops are Razzies and all Razzies are Lazzies, are all
+          Bloops definitely Lazzies?
+        </p>
+        <label><input type="radio" name="q10" value="correct" /> A. Yes</label>
+        <label><input type="radio" name="q10" value="wrong" /> B. No</label>
+        <label
+          ><input type="radio" name="q10" value="wrong" /> C. Cannot say</label
+        >
+        <label
+          ><input type="radio" name="q10" value="wrong" /> D. Sometimes</label
+        >
+
+        <p>Q11. Find the odd one out:</p>
+        <label><input type="radio" name="q11" value="wrong" /> A. Apple</label>
+        <label><input type="radio" name="q11" value="wrong" /> B. Banana</label>
+        <label
+          ><input type="radio" name="q11" value="correct" /> C. Carrot</label
+        >
+        <label><input type="radio" name="q11" value="wrong" /> D. Mango</label>
+
+        <p>
+          Q12. If 5 workers take 8 days to complete a job, how many days will 10
+          workers take?
+        </p>
+        <label><input type="radio" name="q12" value="correct" /> A. 4</label>
+        <label><input type="radio" name="q12" value="wrong" /> B. 6</label>
+        <label><input type="radio" name="q12" value="wrong" /> C. 8</label>
+        <label><input type="radio" name="q12" value="wrong" /> D. 10</label>
+      </div>
+
+      <div class="quiz-section">
+        <h3>Section 4: Skill Assessment (Rate Yourself 1 to 10)</h3>
+
+        <label
+          >Q13. How skillful are you in using
+          <strong>Microsoft Excel</strong>?<br />
+          (1 = Not Skilled, 10 = Expert)</label
+        >
+        <input type="number" name="excel" min="1" max="10" required />
+
+        <label
+          >Q14. How skillful are you in using
+          <strong>Microsoft PowerPoint</strong>?<br />
+          (1 = Not Skilled, 10 = Expert)</label
+        >
+        <input type="number" name="ppt" min="1" max="10" required />
+
+        <label
+          >Q15. How often do you backup all your data (manual or automatic)?<br />
+          (1 = Never, 10 = Almost Always)</label
+        >
+        <input type="number" name="backup" min="1" max="10" required />
+      </div>
+
+      <div id="resultBox" style="display: none" class="result-box">
+        <h3>Your Score</h3>
+        <p id="scoreText" style="font-weight: bold"></p>
+        <p id="scoreMessage"></p>
+      </div>
+
+      <div class="button-group">
+        <button type="button" class="btn" onclick="checkScore()">Check</button>
+        <button type="submit" class="btn" id="submitBtn" disabled>
+          Submit
+        </button>
+      </div>
+    </form>
+
+    <div id="result"></div>
+
+    <footer id="main-footer">
+  <div class="footer-container">
+    <!-- 1st Column -->
+    <div class="footer-col">
+      <h4>QUICK ACCESS</h4>
+      <ul>
+        <li><a href="https://www.alten.com/alten-group/">ALTEN Group</a></li>
+        <li><a href="https://www.alten.com/services/">Services</a></li>
+        <li><a href="https://www.alten.com/#our-sectors">Industries</a></li>
+        <li><a href="https://www.alten.com/careers/">Careers</a></li>
+        <li><a href="https://www.alten.com/investors/">Investors</a></li>
+        <li><a href="https://www.alten.com/newsroom/">Newsroom</a></li>
+      </ul>
+    </div>
+
+    <!-- 2nd Column -->
+    <div class="footer-col">
+      <ul>
+        <li><a href="https://www.alten.com/alten-group/research-innovation/">Research & Innovation</a></li>
+        <li><a href="https://www.alten.com/#alten-in-the-world">Countries</a></li>
+      </ul>
+    </div>
+
+    <!-- 3rd Column -->
+    <div class="footer-col">
+      <ul>
+        <li><a href="https://www.alten.com/alten-group/responsibility-and-sustainability/">Corporate Social Responsibility</a></li>
+        <li><a href="https://www.alten.com/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="https://www.alten.com/cookies-policy/">Your cookies</a></li>
+        <li><a href="https://www.alten.com/legal-information/">Legal Information</a></li>
+        <li><a href="https://www.alten.com/newsroom/#media-library">Media library</a></li>
+        <li><a href="https://www.alten.com/contact/">Do you have a question?</a></li>
+      </ul>
+    </div>
+
+    <!-- 4th Column (Logo) -->
+    <div class="footer-col logo-col">
+      <img src="ALTEN_logo.svg.png" alt="ALTEN Logo" class="footer-logo" />
+    </div>
+
+    <!-- 5th Column (Social Icons) -->
+    <div class="footer-col social-col">
+      <div class="footer-socials">
+         <a href="https://x.com/Alten_group"><img src="twitter.png" alt="X" class="social-icon" /></a>
+      <a href="https://www.linkedin.com/company/alten/"><img src="linkedin.png" alt="LinkedIn" class="social-icon" /></a>
+      <a href="https://www.youtube.com/user/altenfrance"><img src="youtube.png" alt="YouTube" class="social-icon" /></a>
+      <a href="https://www.instagram.com/alten_group/"><img src="instagram.png" alt="Instagram" class="social-icon" /></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+  const nav = document.querySelector(".nav-bar");
+  const rightSection = document.querySelector(".header-right-section");
+
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("show");
+    rightSection.classList.toggle("show");
+  });
+      const submitBtn = document.getElementById("submitBtn");
+
+      function checkScore() {
+        const mcqQuestions = 12;
+        let score = 0;
+
+        for (let i = 1; i <= mcqQuestions; i++) {
+          const answers = document.getElementsByName("q" + i);
+          let answered = false;
+          for (const ans of answers) {
+            if (ans.checked) {
+              answered = true;
+              if (ans.value === "correct") {
+                score++;
+              }
+              break;
+            }
+          }
+          if (!answered) {
+            alert(`Please answer question ${i}.`);
+            return;
+          }
+        }
+
+        const resultDiv = document.getElementById("result");
+        resultDiv.style.display = "block";
+
+        resultDiv.innerHTML = `
+          <h3>Your Results</h3>
+          <p><strong>General Aptitude Score:</strong> ${score} / ${mcqQuestions}</p>
+          ${
+            score > 6
+              ? "<p style='color: green;'>✅ Good job! You can now submit.</p>"
+              : "<p style='color: red;'>❌ You need at least 7 to proceed.</p>"
+          }
+        `;
+
+        submitBtn.disabled = score <= 6;
+
+        resultDiv.scrollIntoView({ behavior: "smooth" });
+      }
+
+      document
+        .getElementById("quizForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const excel = parseInt(this.excel.value);
+          const ppt = parseInt(this.ppt.value);
+          const backup = parseInt(this.backup.value);
+
+          if (
+            isNaN(excel) ||
+            excel < 1 ||
+            excel > 10 ||
+            isNaN(ppt) ||
+            ppt < 1 ||
+            ppt > 10 ||
+            isNaN(backup) ||
+            backup < 1 ||
+            backup > 10
+          ) {
+            alert("Please enter valid skill ratings between 1 and 10.");
+            return;
+          }
+
+          // ✅ Redirect to another page after successful submission
+          window.location.href = "EmployeeDetails.html"; // <-- change this to your actual page
+        });
+    </script>
+  </body>
+</html>
